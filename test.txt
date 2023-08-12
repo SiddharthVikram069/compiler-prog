@@ -1,0 +1,37 @@
+S:int = 5;
+
+Ftp: string = "hello";
+
+Arr: array int[5];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
