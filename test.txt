@@ -4,6 +4,14 @@ Ftp: string = "hello";
 
 Arr: array int[5];
 
+F: function int(He: string, Jl: int){
+
+	X: int;
+	X = X + 1;
+	if(X == 3){ return X + 1;}
+	else{return X * X; }
+}
+
 
 
 

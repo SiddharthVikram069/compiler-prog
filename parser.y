@@ -28,7 +28,8 @@ int yylex();
 %left MUL DIV MOD
 %right NOT
 %left LPAREN LBRACKET 
-
+%nonassoc RPAREN
+%nonassoc ELSE
 
 %%
 
@@ -123,7 +124,8 @@ expr: INTEGER_LITERAL
     | expr LT expr
     | expr LT_EQUAL expr
     | expr AND expr
-    | expr OR expr 
+    | expr OR expr
+    | expr ASSIGN expr 
     ; 
 
 arg_list: arg_list COMMA expr
