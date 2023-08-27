@@ -1,5 +1,8 @@
 %{
 #include<stdio.h>
+#include "decl.h"
+#include "stmt.h"
+#include "expr.h"
 int yylex();
 %}
 
