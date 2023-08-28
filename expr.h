@@ -18,14 +18,19 @@ typedef enum{
   EXPR_FUNC, // for function calls
   EXPR_ARG, // for function arguments
 
+  EXPR_UN_MIN, // unary minus operator 
+
   EXPR_NAME,
 
-  EXPR LT, 
-  EXPR LE,
-  EXPR GT,
-  EXPR GE,
-  EXPR EQ,
-  EXPR NE
+  EXPR_LT, 
+  EXPR_LE,
+  EXPR_GT,
+  EXPR_GE,
+  EXPR_EQ,
+  EXPR_NE,
+
+  EXPR_AND,
+  EXPR_OR
 
 
 } expr_t;
