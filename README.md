@@ -78,9 +78,9 @@ conflicts
 - [x] Define the tokens and make the scanner
 - [x] Make the grammar of the language
 - [x] generate the parser by combining with scanner
-- [ ] Make the Abstract Syntax Tree
-  - [ ] Make the header files for nodes and constructing functions
-  - [ ] Incorporate the constructing functions in the parser.y file 
+- [x] Make the Abstract Syntax Tree <i>(completed in test branch)</i>
+  - [x] Make the header files for nodes and constructing functions 
+  - [x] Incorporate the constructing functions in the parser.y file
 
 ## Contributing 
 
