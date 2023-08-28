@@ -32,7 +32,7 @@ scanning and parsing, these stages check the verification of the tokens and ther
 Details on how to use and modify the project are given in the readme of the file 
 </p>
 
-## Technical Details
+## Technical Details and Challenges
 <p> 
 This section offers some technical details for a reviewer to understand the project in a better sense. For a person not
 interested in the workings can skip this section
@@ -104,6 +104,30 @@ a good way to see this is to follow the parser step by step(you can use the pars
 how your language is enveloping all statements.
 </p>
 
+### Abstract Syntax Tree(AST)
+<p>
+The AST is a tree like structure that represents the structure of a program to be interpreted for further stages of compiler, 
+it is also used to apply optimisations, implement typechecking and scopechecking. Even though it may seem easy to make an AST
+of a program, this is a major challenge as the nodes are made of structures and can complicate the tree too much
+</p>
+<img src = "https://github.com/SiddharthVikram069/compiler-prog/blob/main/AST.png?raw=true"> 
+<p>
+Above image is the AST just for a 5 line function declaration
+</p>
+<p>
+I haven't incorporated the AST in the main branch yet because, it cannot be tested until typechecking and scopechecking are 
+implemented, so I will have to first do those and if they are working, then only I can merge the test branch in the 
+main branch.
+</p>
+
+### challenges in AST
+
+<p>
+Of course the complicated structure of the AST is a huge task to understand and overcome, Douglas Thain's book helped a lot in 
+this phase, it's almost impossible for a beginner to make an AST without some sort of reference. But you must remember the book
+is just a reference and you would have to incorporate some extra things and functions to make it work for your grammar.
+</p>
+
 ## Project Goals 
 
 - [x] making a scanner
@@ -112,6 +136,7 @@ how your language is enveloping all statements.
 
 ### Some Additional Goals 
 
-- [ ] making the Abstract Syntax Tree(AST)
-  - [ ] Making header files for the nodes and construction functions of the AST
-  - [ ] Incorporating those functions in the .y file 
+- [x] making the Abstract Syntax Tree(AST)
+  - [x] Making header files for the nodes and construction functions of the AST
+  - [x] Incorporating those functions in the .y file 
+- [ ] Implement typechecking and scopechecking 
